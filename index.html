@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/styles/output.css" rel="stylesheet" />
+  </head>
+
+  <body class="min-h-screen flex flex-col">
+    <header id="header" class="sticky top-0 bg-white z-50"></header>
+
+    <main
+      class="relative bg-cover bg-center h-screen flex items-center"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1508624217470-5ef0f947d8be?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      "
+    >
+      <!-- Overlay for readability -->
+      <div
+        class="absolute inset-0 bg-linear-to-r from-black/95 via-black/40 to-black/0"
+      ></div>
+
+      <div class="relative max-w-2xl text-white mx-32 text-justify">
+        <h1 class="text-4xl font-bold mb-4">CDR Forecasting Stack</h1>
+        <p class="text-lg md:text-2xl">
+          Accessible, high-fidelity forecasting for marine carbon removal. An
+          AI-enabled stack combining physics-based models and machine learning
+          to predict CO<sub>2</sub> uptake and durability at scale.
+        </p>
+
+        <div class="pt-10 flex items-center gap-5 text-md text-gray-200">
+          <span class="text-lg font-semibold tracking-wide whitespace-nowrap"
+            >This project is supported by Bezos Earth Fund</span
+          >
+          <div class="bg-white/50 backdrop-blur-sm rounded px-2 py-1">
+            <img
+              src="/images/logos/bef.webp"
+              alt="Bezos Earth Fund"
+              class="h-15 w-auto object-contain"
+            />
+          </div>
+          <div class="bg-white/50 backdrop-blur-sm rounded px-2 py-1">
+            <img
+              src="/images/logos/ai-nature.webp"
+              alt="Bezos Earth Fund"
+              class="h-15 w-auto object-contain"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="/scripts/inject-header.js"></script>
+  </body>
+</html>
