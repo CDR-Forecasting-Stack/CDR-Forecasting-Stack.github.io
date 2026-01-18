@@ -16,6 +16,22 @@
     @apply px-3 py-1 text-xs font-medium rounded-full
            bg-gray-50 text-gray-700 ring-1 ring-gray-200;
   }
+
+  .badge-container {
+    @apply flex flex-wrap justify-center gap-2 mt-2;
+  }
+
+  .card {
+    @apply bg-white rounded-lg border border-gray-200 p-2 text-center transition shadow-md;
+  }
+
+  .headshot {
+    @apply mx-auto w-75 h-75 rounded-md object-cover shadow-md mb-4;
+  }
+
+  .link {
+    @apply inline-block text-[#1a335c] font-medium underline decoration-[#1a335c] hover:text-blue-800 hover:decoration-blue-600 transition-colors;
+  }
 }
 
 @layer base {
