@@ -1,6 +1,16 @@
 {
   "dependencies": {
     "@tailwindcss/cli": "^4.1.18",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.1.0",
     "tailwindcss": "^4.1.18"
+  },
+  "scripts": {
+    "build:posts": "node scripts/build-posts.mjs",
+    "tailwind:watch": "npx @tailwindcss/cli -i ./styles/input.css -o ./styles/output.css --watch",
+    "tailwind": "npx @tailwindcss/cli -i ./styles/input.css -o ./styles/output.css"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19"
   }
 }

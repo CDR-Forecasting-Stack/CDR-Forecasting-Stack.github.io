@@ -1,8 +1,8 @@
 const header = document.querySelector("#header");
 
-window.addEventListener("load", function () {
+window.addEventListener("load", () => {
   header.innerHTML = `
-    <nav class="max-w-5xl mx-auto flex justify-center gap-2 py-4 border-b border-gray-200">
+    <nav class="max-w-5xl mx-auto flex justify-center gap-2 py-4 border-b font-sourcesans" style="border-color: #5c2222;">
         <a
           href="/index.html"
           class="px-4 py-2 rounded hover:underline hover:decoration-2 hover:underline-offset-4 transition"

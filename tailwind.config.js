@@ -1,7 +1,11 @@
 module.exports = {
-  content: ["./*.html"],
+  content: ["./pages/**/*.html", "./templates/**/*.html", "./*.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        capriola: ["Capriola", "sans-serif"],
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

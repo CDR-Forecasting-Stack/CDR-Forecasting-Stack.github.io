@@ -1,8 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-capriola: "Raleway", sans-serif;
+  --font-raleway: "Raleway", sans-serif;
+  --font-merriweather: "Merriweather", sans-serif;
+  --font-sourcesans: "Source Sans", sans-serif;
+}
 
 @layer components {
   .badge {
     @apply px-3 py-1 text-xs font-medium rounded-full
            bg-gray-50 text-gray-700 ring-1 ring-gray-200;
+  }
+}
+
+@layer base {
+  body {
+    @apply h-screen flex flex-col;
+  }
+
+  h1 {
+    @apply text-3xl md:text-4xl font-bold font-raleway my-6 text-center;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl text-center font-semibold font-raleway;
+  }
+
+  h3 {
+    @apply text-lg md:text-2xl text-center font-semibold font-raleway;
+  }
+
+  h4 {
+    @apply text-sm md:text-base text-center font-semibold font-raleway;
+  }
+
+  p {
+    @apply text-lg text-gray-700 text-justify font-sourcesans;
+  }
+
+  header {
+    @apply sticky top-0 bg-white z-50;
   }
 }
