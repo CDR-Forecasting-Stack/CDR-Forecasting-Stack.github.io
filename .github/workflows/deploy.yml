@@ -25,6 +25,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Create posts folder
+        run: mkdir -p pages/posts
+
       - name: Build posts
         run: npm run build:posts
 
