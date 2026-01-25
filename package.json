@@ -6,7 +6,7 @@
     "tailwindcss": "^4.1.18"
   },
   "scripts": {
-    "build:posts": "node scripts/build-posts.mjs",
+    "build:posts": "mkdir -p pages/posts && node scripts/build-posts.mjs",
     "tailwind:watch": "npx @tailwindcss/cli -i ./styles/input.css -o ./styles/output.css --watch",
     "tailwind": "npx @tailwindcss/cli -i ./styles/input.css -o ./styles/output.css"
   },
