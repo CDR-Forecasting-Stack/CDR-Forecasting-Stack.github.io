@@ -3,7 +3,7 @@
  Any modifications to the layout should be made in post-template.html
  and modifiying the content should be made in build-posts.mjs
  -->
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <script type="module">
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
@@ -19,7 +19,9 @@
   <body>
     <header id="header"></header>
 
-    <main class="flex-1 max-w-3xl mx-auto px-6 py-16 font-sourcesans">
+    <main
+      class="flex flex-col px-8 mb-auto mt-4 md:px-0 md:max-w-3xl md:mx-auto"
+    >
       {{BREADCRUMBS}}
 
       <h1>{{TITLE}}</h1>
@@ -31,7 +33,7 @@
       </article>
     </main>
 
-    <footer id="footer" class="max-w-5xl mx-auto w-full"></footer>
+    <footer id="footer"></footer>
 
     <script src="/scripts/inject-header.js"></script>
     <script src="/scripts/inject-footer.js"></script>

@@ -71,10 +71,10 @@ for (const file of fs.readdirSync(contentDir)) {
     .render(content)
     .replace(
       /<pre><code class="language-mermaid">([\s\S]*?)<\/code><\/pre>/g,
-      (_, code) => `<div class="mermaid">${code}</div>`
+      (_, code) => `<div class="mermaid">${code}</div>`,
     );
 
-  const url = `/pages/posts/${data.slug}.html`;
+  const url = `/pages/posts/${formatDate(data.date)}-${data.title}.html`;
 
   const breadcrumbs = `
   <nav class="text-md text-gray-500 mb-6 flex justify-center">
@@ -93,7 +93,10 @@ for (const file of fs.readdirSync(contentDir)) {
     .replaceAll("{{CONTENT}}", html)
     .replaceAll("{{BREADCRUMBS}}", breadcrumbs);
 
-  fs.writeFileSync(`${postsOutDir}/${data.slug}.html`, page);
+  fs.writeFileSync(
+    `${postsOutDir}/${formatDate(data.date)}-${data.title}.html`,
+    page,
+  );
 
   cards.push({ ...data, url });
 }
@@ -133,5 +136,5 @@ const cardsHtml = cards
 
 fs.writeFileSync(
   "pages/updates.html",
-  indexTemplate.replace("{{POSTS}}", cardsHtml)
+  indexTemplate.replace("{{POSTS}}", cardsHtml),
 );

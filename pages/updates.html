@@ -3,7 +3,7 @@
  Any modifications to the layout should be made in update-template.html
  and modifications to post cards should be made in build-posts.mjs
  -->
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -15,7 +15,9 @@
   <body>
     <header id="header"></header>
 
-    <main class="flex-1 max-w-5xl mx-auto px-6 py-16">
+    <main
+      class="flex flex-col px-8 mb-auto font-sourcesansmd:px-0 md:max-w-5xl md:mx-auto"
+    >
       <h1>Updates</h1>
 
       <p class="text-center mb-6">Updates on our team, research, and events.</p>
@@ -31,7 +33,7 @@
 
   
         <a
-          href="/pages/posts/some-more-text.html"
+          href="/pages/posts/2026-01-16-See you at OSM26.html"
           class="flex items-center gap-1 text-md text-gray-600 hover:underline mt-2"
         >
           <span>Read more</span>
@@ -42,7 +44,7 @@
       </ul>
     </main>
 
-    <footer id="footer" class="max-w-5xl mx-auto w-full"></footer>
+    <footer id="footer"></footer>
 
     <script src="/scripts/inject-header.js"></script>
     <script src="/scripts/inject-footer.js"></script>

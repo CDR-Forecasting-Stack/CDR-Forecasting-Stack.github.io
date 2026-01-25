@@ -2,7 +2,7 @@ const header = document.querySelector("#header");
 
 window.addEventListener("load", () => {
   header.innerHTML = `
-    <nav class="max-w-5xl mx-auto flex justify-center gap-2 py-4 border-b font-sourcesans" style="border-color: #5c2222;">
+    <nav class="max-w-5xl mx-auto flex justify-center gap-2 text-base py-4 border-b font-sourcesans sm:text-lg" style="border-color: #5c2222;">
         <a
           href="/index.html"
           class="px-4 py-2 rounded hover:underline hover:decoration-2 hover:underline-offset-4 transition"
@@ -40,12 +40,14 @@ window.addEventListener("load", () => {
           Updates
         </a>
 
+        <!--
         <a
           href="/pages/join-us.html"
           class="px-4 py-2 rounded hover:underline hover:decoration-2 hover:underline-offset-4 transition"
         >
           Join Us!
         </a>
+        -->
       </nav>
 `;
 
