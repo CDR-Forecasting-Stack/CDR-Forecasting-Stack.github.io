@@ -1,7 +1,4 @@
-pages/posts/**
-!pages/posts/.gitkeep
- 
-# Logs
+ # Logs
 logs
 *.log
 npm-debug.log*
