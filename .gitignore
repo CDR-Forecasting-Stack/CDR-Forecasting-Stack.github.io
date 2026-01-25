@@ -1,4 +1,5 @@
 pages/posts/**
+!pages/posts/.gitkeep
  
 # Logs
 logs
